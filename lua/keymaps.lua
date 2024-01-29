@@ -25,7 +25,7 @@ keymap.set("n", "<C-l>", "<C-w>l")
 keymap.set("n", "gh", "gT")
 keymap.set("n", "gl", "gt")
 -- open new tab
-keymap.set("n", "te", ":tabedit")
+keymap.set("n", "te", ":tabedit<Return>")
 
 -- move line start/end
 keymap.set("n", "<Space>h", "^")
