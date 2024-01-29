@@ -16,10 +16,10 @@ keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
 -- moving
-keymap.set("n", "<C-h>", "<C-w>h")
-keymap.set("n", "<C-j>", "<C-w>j")
-keymap.set("n", "<C-k>", "<C-w>k")
-keymap.set("n", "<C-l>", "<C-w>l")
+keymap.set("n", "sh", "<C-w>h")
+keymap.set("n", "sj", "<C-w>j")
+keymap.set("n", "sk", "<C-w>k")
+keymap.set("n", "sl", "<C-w>l")
 
 --move tab
 keymap.set("n", "gh", "gT")
@@ -30,3 +30,6 @@ keymap.set("n", "te", ":tabedit<Return>")
 -- move line start/end
 keymap.set("n", "<Space>h", "^")
 keymap.set("n", "<Space>l", "$")
+
+-- begin command to press ';'
+keymap.set("n", ";", ":")
