@@ -9,3 +9,8 @@ local opt = vim.opt
 opt.number = true
 opt.cursorline = true
 opt.relativenumber = true
+
+-- show invisible character
+opt.list = true
+opt.listchars = { tab = '>>', trail = '-', nbsp = '+' }
+
