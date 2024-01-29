@@ -1,5 +1,9 @@
 local keymap = vim.keymap
 
+keymap.set("", "<Space>", "<Nop>")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- to normal mode.
 keymap.set('i', 'jk', '<ESC>')
 
