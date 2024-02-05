@@ -14,3 +14,5 @@ opt.relativenumber = true
 opt.list = true
 opt.listchars = { tab = '>>', trail = '-', nbsp = '+' }
 
+opt.clipboard= 'unnamedplus'
+
