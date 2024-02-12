@@ -23,3 +23,4 @@ local plugins = {
 }
 require("lazy").setup(plugins)
 require('Comment').setup()
+require('colorizer').setup()
