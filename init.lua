@@ -22,4 +22,4 @@ local plugins = {
   { import = "plugins.lsp" },
 }
 require("lazy").setup(plugins)
-
+require('Comment').setup()
