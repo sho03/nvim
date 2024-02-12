@@ -16,3 +16,4 @@ opt.listchars = { tab = '>>', trail = '-', nbsp = '+' }
 
 opt.clipboard= 'unnamedplus'
 
+opt.termguicolors = true

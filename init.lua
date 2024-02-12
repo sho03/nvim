@@ -26,3 +26,9 @@ require('Comment').setup()
 require('colorizer').setup()
 require('gitsigns').setup()
 require('autoclose').setup()
+
+-- onedark
+require('onedark').setup {
+  style = 'darker'
+}
+require('onedark').load()
