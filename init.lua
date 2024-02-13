@@ -21,14 +21,6 @@ local plugins = {
   { import = "plugins" },
   { import = "plugins.lsp" },
 }
-require("lazy").setup(plugins)
-require('Comment').setup()
-require('colorizer').setup()
-require('gitsigns').setup()
-require('autoclose').setup()
 
--- onedark
-require('onedark').setup {
-  style = 'darker'
-}
+require("lazy").setup(plugins)
 require('onedark').load()
