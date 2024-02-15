@@ -12,6 +12,13 @@ return {
       enable_git_status = true,
       close_if_last_window = true,
       enable_diagnostics = true,
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignored = false
+        },
+      },
       default_component_configs = {
         container = {
           enable_character_fade = true
