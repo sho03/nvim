@@ -7,7 +7,17 @@ return {
     local config = require("nvim-treesitter.configs")
     config.setup({
       -- see https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages
-      ensure_installed = {"lua", "javascript", "typescript", "tsx", "dockerfile", "css", "json", "gitignore", "html"},
+      ensure_installed = {
+        "lua",
+        "javascript",
+        "typescript",
+        "tsx",
+        "dockerfile",
+        "css",
+        "json",
+        "gitignore",
+        "html"
+      },
       highlight = { enable = true },
       indent = { enable = true },
     })
