@@ -60,7 +60,7 @@ return {
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
     -- Change the Diagnostic symbols in the sign column (gutter)
-    -- TODO
+    -- TODO: icons
     local signs = { Error = "", Warn = "", Hint = "", Info = "" }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
@@ -121,5 +121,11 @@ return {
         },
       },
     })
+
+    lspconfig["terraformls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
   end,
 }

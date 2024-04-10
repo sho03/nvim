@@ -30,7 +30,8 @@ return {
         "graphql",
         "emmet_ls",
         "prismals",
-        "pyright"
+        "pyright",
+        "terraformls"
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true,
