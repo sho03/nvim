@@ -8,7 +8,7 @@ local opt = vim.opt
 
 opt.number = true
 opt.cursorline = true
-opt.relativenumber = true
+opt.relativenumber = false
 
 -- show invisible character
 opt.list = true
