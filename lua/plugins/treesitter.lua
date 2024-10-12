@@ -16,6 +16,7 @@ return {
           "heex", 
           "javascript", 
           "typescript",
+          "tsx",
           "html", 
         },
         sync_install = false,
