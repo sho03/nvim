@@ -14,13 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
-require("keymaps")
-require("vim-options")
-
-local plugins = {
-  { import = "plugins" },
-  { import = "plugins.lsp" },
-}
-
-require("lazy").setup(plugins)
-require('onedark').load()
+require("lazy").setup({
+  -- plugin here.
+})
