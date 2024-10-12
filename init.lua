@@ -14,6 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 
 local opts = {}
 
-require("lazy").setup({
-  -- plugin here.
-})
+require("keymaps")
+require("vim-options")
+
+local plugins = {
+  { import = "plugins" }
+}
+
+require("lazy").setup(plugins)
