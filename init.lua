@@ -18,7 +18,8 @@ require("keymaps")
 require("vim-options")
 
 local plugins = {
-  { import = "plugins" }
+  { import = "plugins" },
+  { import = "plugins.lsp" },
 }
 
 require("lazy").setup(plugins)
