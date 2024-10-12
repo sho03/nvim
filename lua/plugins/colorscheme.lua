@@ -1,3 +1,4 @@
+-- change colorscheme.
 return {
   'sainnhe/gruvbox-material',
   lazy = false,
