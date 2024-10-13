@@ -1,25 +1,28 @@
--- https://github.com/nvim-treesitter/nvim-treesitter
--- This plugin for highliting code.
 return {
   "nvim-treesitter/nvim-treesitter",
-  build = ":TSUpdate",
+  build = function()
+      require("nvim-treesitter.install").update({ with_sync = true })()
+  end,
   config = function()
-    local config = require("nvim-treesitter.configs")
-    config.setup({
-      -- see https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages
-      ensure_installed = {
-        "lua",
-        "javascript",
-        "typescript",
-        "tsx",
-        "dockerfile",
-        "css",
-        "json",
-        "gitignore",
-        "html"
-      },
-      highlight = { enable = true },
-      indent = { enable = true },
-    })
+    local configs = require("nvim-treesitter.configs")
+    configs.setup({
+        ensure_installed = { 
+          "c", 
+          "lua", 
+          "vim", 
+          "vimdoc", 
+          "query", 
+          "elixir", 
+          "heex", 
+          "javascript", 
+          "typescript",
+          "tsx",
+          "html", 
+        },
+        sync_install = false,
+        highlight = { enable = true },
+        indent = { enable = true },  
+      })
   end
 }
+

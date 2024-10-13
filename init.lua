@@ -23,4 +23,3 @@ local plugins = {
 }
 
 require("lazy").setup(plugins)
-require('onedark').load()
