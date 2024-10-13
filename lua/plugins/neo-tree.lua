@@ -11,19 +11,19 @@ return {
         's1n7ax/nvim-window-picker',
         version = '2.*',
         config = function()
-            require 'window-picker'.setup({
-                filter_rules = {
-                    include_current_win = false,
-                    autoselect_one = true,
-                    -- filter using buffer options
-                    bo = {
-                        -- if the file type is one of following, the window will be ignored
-                        filetype = { 'neo-tree', "neo-tree-popup", "notify" },
-                        -- if the buffer type is one of following, the window will be ignored
-                        buftype = { 'terminal', "quickfix" },
-                    },
+          require 'window-picker'.setup({
+            filter_rules = {
+              include_current_win = false,
+              autoselect_one = true,
+              -- filter using buffer options
+              bo = {
+                  -- if the file type is one of following, the window will be ignored
+                  filetype = { 'neo-tree', "neo-tree-popup", "notify" },
+                  -- if the buffer type is one of following, the window will be ignored
+                  buftype = { 'terminal', "quickfix" },
+              },
             },
-        })
+          })
         end,
       },
     },
@@ -204,10 +204,10 @@ return {
         nesting_rules = {},
         filesystem = {
           filtered_items = {
-            visible = false, -- when true, they will just be displayed differently than normal items
-            hide_dotfiles = true,
-            hide_gitignored = true,
-            hide_hidden = true, -- only works on Windows for hidden files/directories
+            visible = true, -- when true, they will just be displayed differently than normal items
+            hide_dotfiles = false,
+            hide_gitignored = false,
+            hide_hidden = false, -- only works on Windows for hidden files/directories
             hide_by_name = {
               --"node_modules"
             },
